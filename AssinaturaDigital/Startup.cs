@@ -35,7 +35,7 @@ namespace AssinaturaDigital
             services.AddScoped<IAssinaturaRepository, AssinaturaRepository>();
 
             //utilizando banco de dados sql
-            //services.AddScoped<IAssinaturaRepository, AssinaturaSqlServerRepository > ();
+            //services.AddScoped<IAssinaturaRepository, AssinaturaSqlServerRepository>();
 
 
 
