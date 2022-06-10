@@ -29,7 +29,16 @@ namespace AssinaturaDigital
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IAssinaturaService, AssinaturaService>();
+
+
+            //utilizando banco de dados interno
             services.AddScoped<IAssinaturaRepository, AssinaturaRepository>();
+
+            //utilizando banco de dados sql
+            //services.AddScoped<IAssinaturaRepository, AssinaturaSqlServerRepository > ();
+
+
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
